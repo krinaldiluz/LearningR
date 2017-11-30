@@ -1,0 +1,9 @@
+# install.packages("XML")
+library(XML)
+tableteste = 'http://www.contextures.com/xlSampleData01.html'
+
+tableteste.table = readHTMLTable(tableteste, header=T, which=1,stringsAsFactors=F)
+
+tableteste.table
+
+tableteste.table[2,3]
